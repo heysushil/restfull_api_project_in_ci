@@ -51,6 +51,19 @@ class Survivour_api extends REST_Controller
 		$this->response($data, 200);
 	}
 
+	public function inventory_and_survivour_all_or_single_data_get()
+	{
+		$id = $this->input->get('id');
+		if($id != null){
+			$data['success'] = 'Get single servivour data.';
+			$data['result'] = $this->db->query("SELECT s.name, i.* FROM survivor s LEFT JOIN inventory i ON s.id=i.survivor_id WHERE s.id=$id ORDER BY s.id DESC")->result_array();
+		}else{
+			$data['success'] = 'Get all inverntory data.';
+			$data['result'] = $this->db->query("SELECT s.name, i.* FROM survivor s LEFT JOIN inventory i ON s.id=i.survivor_id ORDER BY s.id DESC")->result_array();
+		}
+		$this->response($data, 200);
+	}
+
 	public function survivour_form_data_post()
 	{
 		$arrayData['name']      = $this->input->post('name'); 
@@ -59,7 +72,7 @@ class Survivour_api extends REST_Controller
 		$arrayData['latitude']  = $this->input->post('latitude');     
 		$arrayData['longitude'] = $this->input->post('longitude');  
 			
-		echo 'Enter in api: <pre>';print_r($arrayData);
+		// echo 'Enter in api: <pre>';print_r($arrayData);
 		// Insert data on db
 		$result = $this->Model_common->insertData($this->survivor, $arrayData);
 		$survivor_id = $this->db->insert_id();
@@ -67,10 +80,10 @@ class Survivour_api extends REST_Controller
 			// Surviour if added to our database then provide him/her these resource
 			// 10 is a scale form 0 to 10 for magering the resource quantity.
 			$resourceArrayData['survivor_id']= $survivor_id;
-			$resourceArrayData['water']      = 10;  
-			$resourceArrayData['food']       = 10; 
-			$resourceArrayData['medication'] = 10;       
-			$resourceArrayData['ammunition'] = 10;       			
+			$resourceArrayData['water']      = 100;  
+			$resourceArrayData['food']       = 100; 
+			$resourceArrayData['medication'] = 100;       
+			$resourceArrayData['ammunition'] = 100;       			
 			$resourceResult = $this->Model_common->insertData($this->inventory, $resourceArrayData);
 			if($resourceResult === true){
 				$response['success'] = 'New Surviour founded and recorded on our database successfully. Alos we provide resources successfully to the survivour';				
@@ -98,16 +111,17 @@ class Survivour_api extends REST_Controller
 		{
 			$arrayData['latitude']  = $this->input->post('latitude');     
 			$arrayData['longitude'] = $this->input->post('longitude');
-			$result = $this->Model_common->getWhereContiondata($this->survivor,array('id'=>$id), $arrayData);
+			$result = $this->Model_common->updateData($this->survivor, $arrayData, array('id'=>$id));
+			// $result = $this->db->set($arrayData)->where('id',$id)->update($this->survivor);
 			if($result === true){
 				$response['success'] = 'Yes, surviour successfully changed location and safe for know.';
-				$this->response($arrayData, 200);
+				$this->response($response, 200);
 			}else{
-				$response['error'] = 'Ohh no, there is some problem, try again hurry or we loss you.';
+				$response['error'] = ' Ohh no, there is some problem, try again hurry or we loss you.';
 				$this->response($response, 502);
 			}
 		}else{
-			$response['error'] = 'Alert, you are not allowed to do this.';
+			$response['error'] = 'Id not get: '. $id . 'Alert, you are not allowed to do this.';
 			$this->response($response, 502);
 		}
 	}
@@ -124,16 +138,42 @@ class Survivour_api extends REST_Controller
 		$id = $this->input->post('id');
 		if($id != null)
 		{
-			$arrayData['flag']  = $this->input->post('flag');     
-			
-			$result = $this->Model_common->getWhereContiondata($this->survivor,array('id'=>$id), $arrayData);
+
+			$arrayData['flag']  = $this->input->post('flag') == 0 ? 1 : 0;			
+			$result = $this->Model_common->updateData($this->survivor, $arrayData, array('id'=>$id));
 			if($result === true){
+				// $response['flag'] = $this->db->query("SELECT flag FROM survivor WHERE id=$id")->result_array();
 				$response['success'] = 'Ohh no, surviour infected. Others be safe';
 				$this->response($response, 200);
 			}else{
 				$response['error'] = 'Great, some how you are safe and not infected.';
 				$this->response($response, 502);
 			}
+		}else{
+			$response['error'] = 'Alert, you are not allowed to do this.';
+			$this->response($response, 502);
+		}
+	}
+
+	/**
+	 * Function survivour_flag_report_get
+	 * Need one param flag which have 2 condtion
+	 * 0: not infected
+	 * 1: infected
+	 * 
+	 * @param flag int
+	 * 
+	 * It's generated infrected and non infected report by this value
+	 * 
+	 */
+	public function survivour_flag_report_get()
+	{
+		$flag = $this->input->get('flag');
+		if($flag != null)
+		{
+			$response['result'] = $this->Model_common->getWhereContiondata($this->survivor, array('flag'=>$flag));
+			$response['success'] = 'Yes, you the the total report';
+			$this->response($response, 200);
 		}else{
 			$response['error'] = 'Alert, you are not allowed to do this.';
 			$this->response($response, 502);
@@ -149,6 +189,7 @@ class Survivour_api extends REST_Controller
 		if($id != null)
 		{			
 			$result = $this->Model_common->deleteData($this->survivor,array('id'=>$id));
+			$this->Model_common->deleteData($this->inventory,array('survivor_id'=>$id));
 			if($result === true){
 				$response['success'] = 'Ohh no, we lost one surviour.';
 				$this->response($response, 200);
