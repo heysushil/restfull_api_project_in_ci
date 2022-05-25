@@ -1,0 +1,302 @@
+[
+  {
+    "model": "0M3DZ",
+    "serialNumber": "1U74R28W8Q8X1T8",
+    "manufacturedDate": "2022-05-22T13:24:28.5331388+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "1FQP9",
+    "serialNumber": "8JR6DJ9VRIC6ZAE",
+    "manufacturedDate": "2022-07-05T13:24:28.5331998+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "1NC2E",
+    "serialNumber": "DC0UGPWK64NQHQD",
+    "manufacturedDate": "2022-06-23T13:24:28.5331812+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "21MR4",
+    "serialNumber": "IU4UHXLRWUGJ5WR",
+    "manufacturedDate": "2022-06-30T13:24:28.5331942+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "29IMY",
+    "serialNumber": "5C07BH811Q8HWLL",
+    "manufacturedDate": "2022-05-24T13:24:28.533141+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "2ZHEP",
+    "serialNumber": "117VNLQNKH8P8C7",
+    "manufacturedDate": "2022-06-05T13:24:28.5331614+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "3VJFX",
+    "serialNumber": "6VAWBBT0VNNVHOB",
+    "manufacturedDate": "2022-06-09T13:24:28.5331659+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "79MFI",
+    "serialNumber": "81RODYNCXJK8XM8",
+    "manufacturedDate": "2022-06-03T13:24:28.5331593+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "7G9M1",
+    "serialNumber": "CDEENFA91N5E24J",
+    "manufacturedDate": "2022-06-08T13:24:28.5331648+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "9A4SA",
+    "serialNumber": "UGVIEF3U4XJE0J0",
+    "manufacturedDate": "2022-06-02T13:24:28.5331582+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "A2IWD",
+    "serialNumber": "UHCAVAM6A1LVDLY",
+    "manufacturedDate": "2022-06-25T13:24:28.5331834+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "BLZNB",
+    "serialNumber": "WT54BT0XQOJK8NL",
+    "manufacturedDate": "2022-06-19T13:24:28.5331769+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "BQ8SH",
+    "serialNumber": "DPQAO39SOJ0KCRY",
+    "manufacturedDate": "2022-06-17T13:24:28.5331747+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "BQVXF",
+    "serialNumber": "15H5BK4YDFLD5D8",
+    "manufacturedDate": "2022-05-30T13:24:28.5331475+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "CBMEE",
+    "serialNumber": "CLSW91XS6V92247",
+    "manufacturedDate": "2022-05-28T13:24:28.5331454+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "CKD2P",
+    "serialNumber": "S15MMA0XD5AGKLJ",
+    "manufacturedDate": "2022-05-31T13:24:28.5331486+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "CXHLC",
+    "serialNumber": "CW1TYH39TFTT2S5",
+    "manufacturedDate": "2022-05-25T13:24:28.5331421+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "CZ8U7",
+    "serialNumber": "WIGTQVNRL9TDAGP",
+    "manufacturedDate": "2022-07-02T13:24:28.5331965+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "DEE6V",
+    "serialNumber": "U0691A9NOTM63Y4",
+    "manufacturedDate": "2022-06-10T13:24:28.533167+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "EU7S0",
+    "serialNumber": "N6C3R4ZYNA5ZLZ9",
+    "manufacturedDate": "2022-05-21T13:24:28.5331376+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "EXEI0",
+    "serialNumber": "PBWL6KUKPL5G27T",
+    "manufacturedDate": "2022-05-18T13:24:28.5331328+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "FZA4A",
+    "serialNumber": "CGMBBR1STTAWBU9",
+    "manufacturedDate": "2022-06-12T13:24:28.5331692+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "G1FAF",
+    "serialNumber": "605UZU5B77H223X",
+    "manufacturedDate": "2022-06-18T13:24:28.5331758+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "GCDV4",
+    "serialNumber": "XUT1U7Z3EX4JE2V",
+    "manufacturedDate": "2022-06-29T13:24:28.5331878+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "GRUM9",
+    "serialNumber": "4JGONMZQMBWY9VB",
+    "manufacturedDate": "2022-07-04T13:24:28.5331987+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "I1V71",
+    "serialNumber": "UGJZ9Y3KAZTVQM0",
+    "manufacturedDate": "2022-06-27T13:24:28.5331856+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "INRQE",
+    "serialNumber": "G2P7IFQIQPS5J9Z",
+    "manufacturedDate": "2022-06-28T13:24:28.5331866+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "JLGI4",
+    "serialNumber": "N9HW7OODQBDWSAW",
+    "manufacturedDate": "2022-05-27T13:24:28.5331443+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "JQH1K",
+    "serialNumber": "NM3VTQ4TRDSGF45",
+    "manufacturedDate": "2022-06-26T13:24:28.5331845+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "K2GNT",
+    "serialNumber": "ZU2SHEC8GY1M2HX",
+    "manufacturedDate": "2022-06-01T13:24:28.533157+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "K8AYK",
+    "serialNumber": "Q9UOPUESQ7F16JW",
+    "manufacturedDate": "2022-05-26T13:24:28.5331432+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "KMSAR",
+    "serialNumber": "CVUH35TJUY2CWCJ",
+    "manufacturedDate": "2022-06-13T13:24:28.5331702+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "KP18Q",
+    "serialNumber": "P4VT26CKQLK6WY9",
+    "manufacturedDate": "2022-06-24T13:24:28.5331823+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "M5ATF",
+    "serialNumber": "3HUSY73PSKQPPSC",
+    "manufacturedDate": "2022-06-21T13:24:28.5331791+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "MU5K4",
+    "serialNumber": "88UQB7RI4X5C28S",
+    "manufacturedDate": "2022-06-20T13:24:28.533178+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "P7MLS",
+    "serialNumber": "SO3JGDO2U23GAN8",
+    "manufacturedDate": "2022-06-14T13:24:28.5331714+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "Q9VBO",
+    "serialNumber": "VLRY3F6XHV4AQDU",
+    "manufacturedDate": "2022-05-19T13:24:28.5331351+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "QX88Q",
+    "serialNumber": "C4U7IWINJG32P8L",
+    "manufacturedDate": "2022-06-06T13:24:28.5331625+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "R17RA",
+    "serialNumber": "GABP4TJ5XTI8CE1",
+    "manufacturedDate": "2022-05-29T13:24:28.5331464+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "RCRDL",
+    "serialNumber": "VJON9J7N3GZQNUD",
+    "manufacturedDate": "2022-06-11T13:24:28.5331681+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "RVEHF",
+    "serialNumber": "7R851899LUN9HS9",
+    "manufacturedDate": "2022-06-15T13:24:28.5331725+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "S2FG1",
+    "serialNumber": "NZ70SO0M5O11429",
+    "manufacturedDate": "2022-05-23T13:24:28.5331399+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "S9TOC",
+    "serialNumber": "LSESPXWTRZAXZKC",
+    "manufacturedDate": "2022-06-04T13:24:28.5331603+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "SEZ49",
+    "serialNumber": "VHUGV9EN9QJGIJ4",
+    "manufacturedDate": "2022-05-17T13:24:28.5321297+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "TVJKL",
+    "serialNumber": "P48XVDNL0NEBC4F",
+    "manufacturedDate": "2022-05-20T13:24:28.5331364+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "UQB99",
+    "serialNumber": "54DZERWEAO6JDPY",
+    "manufacturedDate": "2022-07-03T13:24:28.5331976+00:00",
+    "category": "Land"
+  },
+  {
+    "model": "UUTFE",
+    "serialNumber": "GIJK1UZXMWE1IYN",
+    "manufacturedDate": "2022-06-07T13:24:28.5331636+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "WIXML",
+    "serialNumber": "PXE2UI1RN6PZW1W",
+    "manufacturedDate": "2022-07-01T13:24:28.5331954+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "Y1LB0",
+    "serialNumber": "Q1Z25VBJE143EFU",
+    "manufacturedDate": "2022-06-16T13:24:28.5331736+00:00",
+    "category": "Flying"
+  },
+  {
+    "model": "Y9O2D",
+    "serialNumber": "CS23THR949RTMEB",
+    "manufacturedDate": "2022-06-22T13:24:28.5331801+00:00",
+    "category": "Flying"
+  }
+]
